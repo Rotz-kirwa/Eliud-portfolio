@@ -60,7 +60,7 @@ const Hero = () => {
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-              Hi, I'm <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Eliud Rotich</span>
+              Hi, I'm <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Eliud Rotich</span>, a Software Engineer
             </h1>
             
             <div className="text-xl md:text-2xl text-gray-300 mb-8 h-8">
