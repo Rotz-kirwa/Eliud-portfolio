@@ -9,13 +9,13 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution with payment integration, user authentication, and admin dashboard.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop',
-      tech: ['React', 'Python', 'Flask', 'PostgreSQL'],
+      title: 'Wildwaves Safari Agency',
+      description: 'Full-stack website with booking system, photo gallery, and responsive UI. Built with React, Node.js, Tailwind CSS, and PostgreSQL.',
+      image: 'https://images.unsplash.com/photo-1498038116800-4159eb9b2a62?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHNhZmFyaXxlbnwwfHwwfHx8MA%3D%3D',
+      tech: ['React', 'Node.js', 'Tailwind CSS', 'PostgreSQL'],
       category: 'fullstack',
-      github: 'https://github.com',
-      demo: 'https://demo.com',
+      github: 'https://github.com/Rotz-kirwa',
+      demo: 'https://wildwaves-safari.com',
       featured: true,
       stars: 124,
       views: 2340,
@@ -37,13 +37,17 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: 'API Analytics Dashboard',
-      description: 'RESTful API with comprehensive analytics dashboard for monitoring application performance.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop',
-      tech: ['Python', 'Flask', 'MySQL', 'SQL'],
-      category: 'backend',
-      github: 'https://github.com',
-      demo: 'https://demo.com'
+      title: 'University Website',
+      description: 'Responsive multi-page school website using React and Tailwind CSS with dynamic content integration.',
+      image: 'https://images.unsplash.com/photo-1562774053-701939374585?w=500&h=300&fit=crop',
+      tech: ['React', 'Tailwind CSS', 'JavaScript'],
+      category: 'frontend',
+      github: 'https://github.com/Rotz-kirwa',
+      demo: 'https://demo.com',
+      featured: false,
+      stars: 78,
+      views: 1450,
+      status: 'completed'
     },
     {
       id: 4,
@@ -53,7 +57,11 @@ const Projects = () => {
       tech: ['React', 'Tailwind CSS', 'JavaScript'],
       category: 'frontend',
       github: 'https://github.com',
-      demo: 'https://demo.com'
+      demo: 'https://demo.com',
+      featured: false,
+      stars: 92,
+      views: 1800,
+      status: 'completed'
     },
     {
       id: 5,
@@ -63,7 +71,11 @@ const Projects = () => {
       tech: ['Python', 'Flask', 'PostgreSQL', 'React'],
       category: 'fullstack',
       github: 'https://github.com',
-      demo: 'https://demo.com'
+      demo: 'https://demo.com',
+      featured: false,
+      stars: 103,
+      views: 2100,
+      status: 'completed'
     },
     {
       id: 6,
@@ -91,6 +103,34 @@ const Projects = () => {
       featured: true,
       stars: 156,
       views: 2890,
+      status: 'completed'
+    },
+    {
+      id: 8,
+      title: 'Corporate Management Website',
+      description: 'Professional corporate website with management dashboard, employee portal, and business analytics features.',
+      image: 'https://plus.unsplash.com/premium_photo-1683134240390-04ff69415385?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNvb3BvcmF0ZSUyMG1hbmFnZW1lbnQlMjB3ZWJzaXRlfGVufDB8fDB8fHww',
+      tech: ['React', 'Node.js', 'PostgreSQL', 'Tailwind CSS'],
+      category: 'fullstack',
+      github: 'https://github.com/Rotz-kirwa',
+      demo: 'https://demo.com',
+      featured: false,
+      stars: 87,
+      views: 1650,
+      status: 'completed'
+    },
+    {
+      id: 9,
+      title: 'Expense Tracker',
+      description: 'Personal finance management app with budget tracking, expense categorization, and financial analytics dashboard.',
+      image: 'https://plus.unsplash.com/premium_photo-1680721444874-6b52aa31e26c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGV4cGVuc2UlMjB0cmFja2VyfGVufDB8fDB8fHww',
+      tech: ['React', 'JavaScript', 'Chart.js', 'Local Storage'],
+      category: 'frontend',
+      github: 'https://github.com/Rotz-kirwa',
+      demo: 'https://demo.com',
+      featured: false,
+      stars: 73,
+      views: 1420,
       status: 'completed'
     }
   ];

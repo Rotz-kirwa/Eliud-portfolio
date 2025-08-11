@@ -12,30 +12,38 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              I'm a dedicated Full-Stack Software Engineer with a passion for creating 
-              innovative web solutions. With expertise in both frontend and backend technologies, 
-              I help businesses transform their ideas into powerful digital experiences.
+              Full Stack Developer with expertise in React, Node.js, and AWS cloud services, 
+              specializing in building responsive, scalable web applications and AI-enhanced solutions. 
+              Skilled in RESTful API development, database optimization, and prompt engineering using Amazon Bedrock.
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              My journey in software development has equipped me with a comprehensive skill set 
-              spanning modern frameworks, databases, and cloud technologies. I'm committed to 
-              writing clean, efficient code and staying updated with the latest industry trends.
+              Proven track record of delivering 5+ client projects end-to-end with a focus on performance, 
+              usability, and business impact. Currently expanding expertise in prompt engineering and 
+              generative AI integration to build next-generation applications.
             </p>
             
             <div className="grid grid-cols-2 gap-4 mt-8">
               <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg">
                 <h4 className="font-semibold text-gray-800 dark:text-white mb-2">Frontend</h4>
-                <p className="text-sm text-gray-600 dark:text-gray-300">React, JavaScript, HTML, CSS, Tailwind</p>
+                <p className="text-sm text-gray-600 dark:text-gray-300">React, JavaScript, HTML, CSS, Tailwind CSS</p>
               </div>
               <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg">
                 <h4 className="font-semibold text-gray-800 dark:text-white mb-2">Backend</h4>
-                <p className="text-sm text-gray-600 dark:text-gray-300">Python, Flask, SQL, PostgreSQL</p>
+                <p className="text-sm text-gray-600 dark:text-gray-300">Node.js, Python, Flask, SQL, PostgreSQL</p>
+              </div>
+              <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg">
+                <h4 className="font-semibold text-gray-800 dark:text-white mb-2">Cloud & AI</h4>
+                <p className="text-sm text-gray-600 dark:text-gray-300">AWS, Prompt Engineering, Amazon Bedrock</p>
+              </div>
+              <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg">
+                <h4 className="font-semibold text-gray-800 dark:text-white mb-2">Tools</h4>
+                <p className="text-sm text-gray-600 dark:text-gray-300">Git, GitHub, API Integration, Testing</p>
               </div>
             </div>
 
             <div className="flex items-center space-x-4 mt-8">
               <div className="w-4 h-4 bg-green-500 rounded-full animate-pulse"></div>
-              <span className="text-gray-600 dark:text-gray-300 font-medium">Available for freelance work</span>
+              <span className="text-gray-600 dark:text-gray-300 font-medium">Available for work</span>
             </div>
           </div>
 

@@ -19,61 +19,24 @@ const Contact = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const validateField = (name, value) => {
-    switch (name) {
-      case 'name':
-        return value.length < 2 ? 'Name must be at least 2 characters' : '';
-      case 'email':
-        return !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) ? 'Invalid email address' : '';
-      case 'subject':
-        return value.length < 5 ? 'Subject must be at least 5 characters' : '';
-      case 'message':
-        return value.length < 10 ? 'Message must be at least 10 characters' : '';
-      default:
-        return '';
-    }
-  };
-
-  const validateForm = () => {
-    const newErrors = {};
-    Object.keys(formData).forEach(key => {
-      const error = validateField(key, formData[key]);
-      if (error) newErrors[key] = error;
-    });
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
-    
-    // Real-time validation
-    if (touched[name]) {
-      const error = validateField(name, value);
-      setErrors(prev => ({ ...prev, [name]: error }));
-    }
-  };
-
-  const handleBlur = (e) => {
-    const { name, value } = e.target;
-    setTouched(prev => ({ ...prev, [name]: true }));
-    const error = validateField(name, value);
-    setErrors(prev => ({ ...prev, [name]: error }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    if (!validateForm()) {
-      setTouched({ name: true, email: true, subject: true, message: true });
+    if (!formData.name || !formData.email || !formData.message) {
+      setSubmitStatus('error');
+      setTimeout(() => setSubmitStatus(''), 3000);
       return;
     }
     
     setIsSubmitting(true);
     
     // Create WhatsApp message
-    const whatsappMessage = `Hi! I'm ${formData.name}%0A%0ASubject: ${formData.subject}%0A%0AMessage: ${formData.message}%0A%0AEmail: ${formData.email}`;
+    const whatsappMessage = `Hi! I'm ${formData.name}%0A%0ASubject: ${formData.subject || 'No subject'}%0A%0AMessage: ${formData.message}%0A%0AEmail: ${formData.email}`;
     const whatsappURL = `https://wa.me/254791260817?text=${whatsappMessage}`;
     
     // Open WhatsApp
@@ -82,71 +45,11 @@ const Contact = () => {
     // Show success message
     setSubmitStatus('success');
     setFormData({ name: '', email: '', subject: '', message: '' });
-    setTouched({});
-    setErrors({});
     setIsSubmitting(false);
     setTimeout(() => setSubmitStatus(''), 5000);
   };
 
-  const InputField = ({ name, type = 'text', placeholder, rows, icon: Icon }) => {
-    const hasError = errors[name] && touched[name];
-    const isValid = !errors[name] && touched[name] && formData[name];
-    
-    const Component = rows ? 'textarea' : 'input';
-    
-    return (
-      <div className="relative">
-        <label htmlFor={name} className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 capitalize">
-          {name} {name !== 'subject' && '*'}
-        </label>
-        <div className="relative">
-          {Icon && (
-            <Icon className="absolute left-3 top-3 text-gray-400" size={20} />
-          )}
-          <Component
-            type={type}
-            id={name}
-            name={name}
-            value={formData[name]}
-            onChange={handleChange}
-            onBlur={handleBlur}
-            required={name !== 'subject'}
-            rows={rows}
-            className={`w-full ${Icon ? 'pl-10' : 'pl-4'} pr-10 py-3 border rounded-xl focus:ring-2 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-all duration-300 ${
-              hasError
-                ? 'border-red-500 focus:ring-red-500'
-                : isValid
-                ? 'border-green-500 focus:ring-green-500'
-                : 'border-gray-300 dark:border-gray-600 focus:ring-blue-500'
-            } ${rows ? 'resize-none' : ''}`}
-            placeholder={placeholder}
-          />
-          
-          {/* Validation Icons */}
-          <div className="absolute right-3 top-3">
-            {hasError && <FiX className="text-red-500" size={20} />}
-            {isValid && <FiCheck className="text-green-500" size={20} />}
-          </div>
-        </div>
-        
-        {/* Error Message */}
-        {hasError && (
-          <p className="mt-1 text-sm text-red-500 flex items-center gap-1">
-            <FiX size={14} />
-            {errors[name]}
-          </p>
-        )}
-        
-        {/* Success Message */}
-        {isValid && (
-          <p className="mt-1 text-sm text-green-500 flex items-center gap-1">
-            <FiCheck size={14} />
-            Looks good!
-          </p>
-        )}
-      </div>
-    );
-  };
+
 
   return (
     <section id="contact" className="py-20 bg-white dark:bg-gray-900">
@@ -214,46 +117,79 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl">
-              <h4 className="font-semibold text-gray-800 dark:text-white mb-2">Response Time</h4>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
-                I typically respond to all inquiries within 24 hours. For urgent projects, 
-                feel free to mention it in your message.
-              </p>
-            </div>
+
           </div>
 
           {/* Contact Form */}
           <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-2xl">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
-                <InputField
-                  name="name"
-                  placeholder="Your Full Name"
-                  icon={FiMail}
-                />
-                <InputField
-                  name="email"
-                  type="email"
-                  placeholder="your@email.com"
-                  icon={FiMail}
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Name *
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                    placeholder="Your Full Name"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Email *
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                    placeholder="your@email.com"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                  placeholder="What's this about?"
                 />
               </div>
 
-              <InputField
-                name="subject"
-                placeholder="What's this about?"
-              />
-
-              <InputField
-                name="message"
-                placeholder="Tell me about your project, timeline, and budget..."
-                rows={6}
-              />
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  Message *
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  rows={6}
+                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white resize-none"
+                  placeholder="Tell me about your project, timeline, and budget..."
+                />
+              </div>
 
               <button
                 type="submit"
-                disabled={isSubmitting || Object.keys(errors).some(key => errors[key])}
+                disabled={isSubmitting}
                 className="group w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 disabled:from-gray-400 disabled:to-gray-500 text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 disabled:scale-100 shadow-lg hover:shadow-xl"
               >
                 {isSubmitting ? (
@@ -279,7 +215,7 @@ const Contact = () => {
               {submitStatus === 'error' && (
                 <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl p-4 text-red-700 dark:text-red-400 text-center flex items-center justify-center gap-2">
                   <FiX className="text-red-500" size={20} />
-                  <span>Something went wrong. Please try again or email me directly.</span>
+                  <span>Please fill in all required fields.</span>
                 </div>
               )}
             </form>

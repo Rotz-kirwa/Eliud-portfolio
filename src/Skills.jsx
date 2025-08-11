@@ -12,6 +12,7 @@ const Skills = () => {
     { name: 'JavaScript', icon: FaJs, color: 'text-yellow-500', level: 88, gradient: 'from-yellow-400 to-orange-500' },
     { name: 'React', icon: FaReact, color: 'text-cyan-500', level: 85, gradient: 'from-cyan-400 to-blue-500' },
     { name: 'Python', icon: FaPython, color: 'text-blue-600', level: 92, gradient: 'from-blue-500 to-indigo-600' },
+    { name: 'Node.js', icon: SiFlask, color: 'text-green-600', level: 88, gradient: 'from-green-500 to-green-700' },
     { name: 'Flask', icon: SiFlask, color: 'text-gray-700', level: 80, gradient: 'from-gray-500 to-gray-700' },
     { name: 'SQL', icon: FaDatabase, color: 'text-gray-600', level: 85, gradient: 'from-gray-400 to-gray-600' },
     { name: 'PostgreSQL', icon: SiPostgresql, color: 'text-blue-700', level: 82, gradient: 'from-blue-600 to-indigo-700' },

@@ -56,7 +56,7 @@ const Hero = () => {
             {/* Glowing Badge */}
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 backdrop-blur-sm mb-8">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse mr-2"></div>
-              <span className="text-blue-300 text-sm font-medium">Available for Freelance Work</span>
+              <span className="text-blue-300 text-sm font-medium">Available for Work</span>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
@@ -89,7 +89,7 @@ const Hero = () => {
                 View Projects
               </a>
               <a
-                href="/resume.pdf"
+                href="https://drive.google.com/file/d/1your-resume-file-id/view?usp=sharing"
                 download
                 className="group flex items-center gap-2 text-gray-300 hover:text-blue-400 transition-all duration-300 hover:scale-105"
               >

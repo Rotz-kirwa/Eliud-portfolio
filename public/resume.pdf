@@ -1,2 +1,189 @@
-# This is a placeholder for your resume PDF file
-# Replace this file with your actual resume PDF
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+/F2 6 0 R
+>>
+>>
+>>
+endobj
+
+4 0 obj
+<<
+/Length 2500
+>>
+stream
+BT
+/F2 16 Tf
+50 750 Td
+(Eliud Rotich) Tj
+0 -20 Td
+/F1 12 Tf
+(Full Stack Developer | AWS & Prompt Engineering) Tj
+0 -15 Td
+(Phone: +254 791 260 817 | Email: eliudkirwa452@gmail.com) Tj
+0 -15 Td
+(Portfolio: eliud-portfolio.vercel.app | GitHub: github.com/Rotz-kirwa) Tj
+0 -15 Td
+(LinkedIn: linkedin.com/in/eliud-rotich-48b754357) Tj
+
+0 -30 Td
+/F2 14 Tf
+(PROFESSIONAL SUMMARY) Tj
+0 -20 Td
+/F1 11 Tf
+(Full Stack Developer with expertise in React, Node.js, and AWS cloud services,) Tj
+0 -15 Td
+(specializing in building responsive, scalable web applications and AI-enhanced) Tj
+0 -15 Td
+(solutions. Skilled in RESTful API development, database optimization, and prompt) Tj
+0 -15 Td
+(engineering using Amazon Bedrock to integrate generative AI features. Proven) Tj
+0 -15 Td
+(track record of delivering client projects end-to-end with a focus on performance,) Tj
+0 -15 Td
+(usability, and business impact.) Tj
+
+0 -30 Td
+/F2 14 Tf
+(TECHNICAL SKILLS) Tj
+0 -20 Td
+/F1 11 Tf
+(• Frontend: HTML, CSS, Tailwind CSS, JavaScript, React) Tj
+0 -15 Td
+(• Backend: Node.js, Python, Flask) Tj
+0 -15 Td
+(• Databases: SQL, MySQL, PostgreSQL) Tj
+0 -15 Td
+(• Version Control: Git, GitHub) Tj
+0 -15 Td
+(• Other: API Integration, Prompt Engineering, Testing & Debugging,) Tj
+0 -15 Td
+(  Responsive Web Design) Tj
+
+0 -30 Td
+/F2 14 Tf
+(PROJECTS) Tj
+0 -20 Td
+/F1 11 Tf
+(• Wildwaves Safari Agency – wildwaves-safari.com) Tj
+0 -15 Td
+(  Full-stack website with booking system, photo gallery, and responsive UI.) Tj
+0 -15 Td
+(  Built with React, Node.js, Tailwind CSS, and PostgreSQL; deployed on) Tj
+0 -15 Td
+(  Vercel/Render.) Tj
+0 -20 Td
+(• The Poverty Line Project – the-poverty-line-project-okxb.vercel.app) Tj
+0 -15 Td
+(  Collaborative data-driven site using React, Tailwind CSS, and API) Tj
+0 -15 Td
+(  integration to visualize poverty metrics.) Tj
+0 -20 Td
+(• University Website – GitHub Repository) Tj
+0 -15 Td
+(  Responsive multi-page school website using React and Tailwind CSS) Tj
+0 -15 Td
+(  with dynamic content integration.) Tj
+
+0 -30 Td
+/F2 14 Tf
+(EXPERIENCE) Tj
+0 -20 Td
+/F1 11 Tf
+(• Freelance Full Stack Developer – Self-Employed \(2023 – Present\)) Tj
+0 -15 Td
+(  Delivered 5+ client projects, handling both frontend and backend) Tj
+0 -15 Td
+(  development. Integrated REST APIs, optimized SQL queries, and deployed) Tj
+0 -15 Td
+(  scalable apps on AWS and Vercel. Improved client site performance and) Tj
+0 -15 Td
+(  user engagement through responsive design and fast-loading architectures.) Tj
+0 -20 Td
+(• Junior Software Engineer – Zenka \(Mar 2025 – Jun 2025\)) Tj
+0 -15 Td
+(  Assisted in developing internal and client-facing tools using React,) Tj
+0 -15 Td
+(  Flask, and SQL. Collaborated with a team of developers in Agile sprints,) Tj
+0 -15 Td
+(  contributing to new features and bug fixes. Optimized backend processes,) Tj
+0 -15 Td
+(  improving data retrieval speeds by 20%.) Tj
+
+0 -30 Td
+/F2 14 Tf
+(EDUCATION) Tj
+0 -20 Td
+/F1 11 Tf
+(• Moringa School – Software Engineering) Tj
+0 -15 Td
+(  Built multiple projects including a full-stack e-commerce platform and) Tj
+0 -15 Td
+(  Flask-based API service.) Tj
+0 -20 Td
+(• AWS – Prompt Engineering \(2024–2025\)) Tj
+0 -15 Td
+(  Trained in designing, optimizing, and integrating prompts for LLMs.) Tj
+0 -15 Td
+(  Hands-on with Amazon Bedrock and SageMaker to build AI-enhanced) Tj
+0 -15 Td
+(  applications.) Tj
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Bold
+>>
+endobj
+
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000274 00000 n 
+0000002826 00000 n 
+0000002903 00000 n 
+trailer
+<<
+/Size 7
+/Root 1 0 R
+>>
+startxref
+2985
+%%EOF
