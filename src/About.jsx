@@ -12,14 +12,14 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              Full Stack Developer with expertise in React, Node.js, and AWS cloud services, 
-              specializing in building responsive, scalable web applications and AI-enhanced solutions. 
-              Skilled in RESTful API development, database optimization, and prompt engineering using Amazon Bedrock.
+              Detail-oriented Full Stack Developer with expertise in front-end and backend development, 
+              software troubleshooting, and Agile methodologies. Skilled in designing user-friendly interfaces, 
+              optimizing system performance, and streamlining development processes to enhance user experience.
             </p>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              Proven track record of delivering 5+ client projects end-to-end with a focus on performance, 
-              usability, and business impact. Currently expanding expertise in prompt engineering and 
-              generative AI integration to build next-generation applications.
+              Proven track record of collaborating across teams to deliver innovative, high-quality software 
+              solutions that meet business needs. Strong problem-solving and communication skills, with a 
+              commitment to continuous learning in emerging technologies like AI and cloud computing.
             </p>
             
             <div className="grid grid-cols-2 gap-4 mt-8">

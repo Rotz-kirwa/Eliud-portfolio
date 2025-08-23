@@ -88,14 +88,6 @@ const Hero = () => {
               >
                 View Projects
               </a>
-              <a
-                href="https://drive.google.com/file/d/1your-resume-file-id/view?usp=sharing"
-                download
-                className="group flex items-center gap-2 text-gray-300 hover:text-blue-400 transition-all duration-300 hover:scale-105"
-              >
-                <FiDownload size={20} className="group-hover:animate-bounce" />
-                Download Resume
-              </a>
             </div>
           </div>
           

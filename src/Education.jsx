@@ -5,27 +5,27 @@ const Education = () => {
     {
       id: 1,
       institution: 'Moringa School',
-      degree: 'Software Engineering',
-      period: '2023 - 2024',
-      description: 'Built multiple projects including a full-stack e-commerce platform and Flask-based API service. Gained hands-on experience in modern web development technologies.',
+      degree: 'Software Engineering Bootcamp (Full-Stack Development)',
+      period: '08/2023 - 09/2024',
+      description: 'Intensive training in Python, JavaScript, React, Flask, and SQL. Built and deployed full-stack applications individually and in teams. Practiced Agile methodology, version control (Git/GitHub), and testing.',
       icon: FiBook,
       color: 'from-blue-500 to-blue-600'
     },
     {
       id: 2,
-      institution: 'AWS',
-      degree: 'Prompt Engineering Certification',
-      period: '2024 - 2025',
-      description: 'Trained in designing, optimizing, and integrating prompts for LLMs. Hands-on with Amazon Bedrock and SageMaker to build AI-enhanced applications.',
+      institution: 'IBM SkillsBuild',
+      degree: 'Prompt Engineering Certificate',
+      period: '2024',
+      description: 'Comprehensive training in AI prompt engineering techniques, focusing on optimizing interactions with large language models and implementing AI solutions.',
       icon: FiAward,
       color: 'from-orange-500 to-orange-600'
     },
     {
       id: 3,
       institution: 'Roadmap.sh',
-      degree: 'Full Stack Developer Path',
-      period: '2023 - Present',
-      description: 'Following structured learning paths for frontend, backend, and DevOps technologies. Completed roadmaps for React, Node.js, and database management.',
+      degree: 'Machine Learning Course',
+      period: '07/2025 - Present',
+      description: 'Currently pursuing advanced machine learning concepts and practical applications. Focusing on data science, algorithms, and ML model development.',
       icon: FiMapPin,
       color: 'from-green-500 to-green-600'
     }
