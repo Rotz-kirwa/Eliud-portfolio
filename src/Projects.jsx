@@ -25,7 +25,7 @@ const Projects = () => {
       id: 2,
       title: 'Memory Card Game',
       description: 'Interactive memory card game featuring dynamic gameplay, state management, and responsive UI design. Built as a gaming platform with engaging user experience.',
-      image: 'https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=500&h=300&fit=crop',
+      image: 'https://images.unsplash.com/photo-1591196702597-062a87208fed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fE1lbW9yeSUyMENhcmQlMjBHYW1lfGVufDB8fDB8fHww',
       tech: ['React', 'Tailwind CSS', 'JavaScript'],
       category: 'frontend',
       github: 'https://github.com/Rotz-kirwa',
@@ -68,7 +68,7 @@ const Projects = () => {
       title: 'Data Visualization Tool',
       description: 'Interactive data visualization platform for analyzing complex datasets with custom charts.',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop',
-      tech: ['Python', 'Flask', 'PostgreSQL', 'React'],
+      tech: ['React', 'Python', 'Flask', 'PostgreSQL'],
       category: 'fullstack',
       github: 'https://github.com',
       demo: 'https://demo.com',
@@ -82,7 +82,7 @@ const Projects = () => {
       title: 'Restaurant Management System',
       description: 'Complete restaurant management solution with inventory tracking and order management.',
       image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&h=300&fit=crop',
-      tech: ['Python', 'Flask', 'MySQL'],
+      tech: ['React', 'Python', 'Flask', 'MySQL'],
       category: 'backend',
       github: 'https://github.com',
       demo: 'https://demo.com',
@@ -131,6 +131,20 @@ const Projects = () => {
       featured: false,
       stars: 73,
       views: 1420,
+      status: 'completed'
+    },
+    {
+      id: 10,
+      title: 'Casino Games Platform',
+      description: 'Interactive casino gaming platform with multiple card games, real-time gameplay, and engaging user experience.',
+      image: 'https://images.unsplash.com/photo-1627831389670-d20f5a01c536?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FzaW5vJTIwZ2FtZXxlbnwwfHwwfHx8MA%3D%3D',
+      tech: ['React', 'JavaScript', 'CSS3', 'Game Logic'],
+      category: 'frontend',
+      github: 'https://github.com/Rotz-kirwa',
+      demo: 'https://demo.com',
+      featured: false,
+      stars: 95,
+      views: 1890,
       status: 'completed'
     }
   ];
@@ -224,17 +238,7 @@ const Projects = () => {
             {project.description}
           </p>
           
-          {/* Stats */}
-          <div className="flex items-center gap-4 mb-4 text-sm text-gray-500 dark:text-gray-400">
-            <div className="flex items-center gap-1">
-              <FiStar size={14} />
-              {project.stars}
-            </div>
-            <div className="flex items-center gap-1">
-              <FiEye size={14} />
-              {project.views}
-            </div>
-          </div>
+
           
           <div className="flex flex-wrap gap-2">
             {project.tech.map((tech) => (

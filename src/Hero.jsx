@@ -73,15 +73,7 @@ const Hero = () => {
               Let's transform your ideas into <span className="text-green-400 font-semibold">digital reality</span>.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-12">
-              <a
-                href="#contact"
-                className="group relative bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl hover:scale-105"
-              >
-                <FiMail size={20} className="group-hover:rotate-12 transition-transform" />
-                Hire Me Now
-                <div className="absolute inset-0 bg-white/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              </a>
+            <div className="flex justify-center lg:justify-start mb-12">
               <a
                 href="#projects"
                 className="group border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 backdrop-blur-sm hover:scale-105"
