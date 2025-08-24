@@ -5,6 +5,7 @@ import About from './About';
 import Skills from './Skills';
 import Education from './Education';
 import Experience from './Experience';
+import Vision from './Vision';
 import Projects from './Projects';
 import Testimonials from './Testimonials';
 import Contact from './Contact';
@@ -47,6 +48,7 @@ function App() {
         <Skills />
         <Education />
         <Experience />
+        <Vision />
         <Projects />
         <Testimonials />
         <Contact />

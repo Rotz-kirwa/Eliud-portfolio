@@ -3,7 +3,7 @@ import { FiMenu, FiX, FiSun, FiMoon } from 'react-icons/fi';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -28,6 +28,7 @@ const Header = () => {
     { name: 'Skills', href: '#skills' },
     { name: 'Education', href: '#education' },
     { name: 'Experience', href: '#experience' },
+    { name: 'Vision', href: '#vision' },
     { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' }
   ];
@@ -59,26 +60,12 @@ const Header = () => {
                 {item.name}
               </a>
             ))}
-            <button
-              onClick={() => setDarkMode(!darkMode)}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-            >
-              {darkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
-            </button>
+
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-4">
-            <button
-              onClick={() => setDarkMode(!darkMode)}
-              className={`p-2 rounded-lg transition-colors ${
-                scrolled 
-                  ? 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300' 
-                  : 'bg-white/20 backdrop-blur-sm text-white'
-              }`}
-            >
-              {darkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
-            </button>
+
             <button
               onClick={() => setIsOpen(!isOpen)}
               className={scrolled ? 'text-gray-600 dark:text-gray-300' : 'text-white'}

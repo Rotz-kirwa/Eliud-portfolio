@@ -146,26 +146,50 @@ const Skills = () => {
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-8">What I Do Best</h3>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg">
-              <div className="text-blue-600 text-3xl mb-4">🎨</div>
-              <h4 className="font-semibold text-gray-800 dark:text-white mb-2">Frontend Development</h4>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
-                Creating responsive, interactive user interfaces with modern frameworks
-              </p>
+            <div className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg relative overflow-hidden">
+              <div className="relative z-10">
+                <div className="w-full h-32 mb-4 rounded-lg overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1577648188599-291bb8b831c3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGZyb250ZW5kfGVufDB8fDB8fHww"
+                    alt="Frontend Development"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 className="font-semibold text-gray-800 dark:text-white mb-2">Frontend Development</h4>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">
+                  Creating responsive, interactive user interfaces with modern frameworks
+                </p>
+              </div>
             </div>
-            <div className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg">
-              <div className="text-green-600 text-3xl mb-4">⚙️</div>
-              <h4 className="font-semibold text-gray-800 dark:text-white mb-2">Backend Development</h4>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
-                Building robust APIs and server-side applications with Python and Flask
-              </p>
+            <div className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg relative overflow-hidden">
+              <div className="relative z-10">
+                <div className="w-full h-32 mb-4 rounded-lg overflow-hidden">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1678565869434-c81195861939?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJhY2tlbmR8ZW58MHx8MHx8fDA%3D"
+                    alt="Backend Development"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 className="font-semibold text-gray-800 dark:text-white mb-2">Backend Development</h4>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">
+                  Building robust APIs and server-side applications with Python and Flask
+                </p>
+              </div>
             </div>
-            <div className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg">
-              <div className="text-purple-600 text-3xl mb-4">🗄️</div>
-              <h4 className="font-semibold text-gray-800 dark:text-white mb-2">Database Design</h4>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
-                Designing efficient database schemas and optimizing queries
-              </p>
+            <div className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg relative overflow-hidden">
+              <div className="relative z-10">
+                <div className="w-full h-32 mb-4 rounded-lg overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGRhdGFiYXNlfGVufDB8fDB8fHww"
+                    alt="Database Design"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 className="font-semibold text-gray-800 dark:text-white mb-2">Database Design</h4>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">
+                  Designing efficient database schemas and optimizing queries
+                </p>
+              </div>
             </div>
           </div>
         </div>
